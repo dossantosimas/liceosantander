@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;0,800;0,900;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css?v=0.0.1">
+    <link rel="stylesheet" href="libs/wow/animate.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/4fd0929049.js" crossorigin="anonymous"></script>
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/main.js"></script>
+    <script src="libs/wow/wow.js"></script>
+    <script type="text/javascript" src="js/funciones.js"></script>
+</head>
+<body>
+    <section id="banner" class="fondo-1-login">
+            <div class="container">
+                <div class="fila">
+                    <div class="columna columna-100 columna-mb-100">
+                        <div class="link-logo">
+                            <img class="logo" src="img/imagenes/logo.png" width="80" height="13">
+                        </div>
+                        <h1 class="wow slideInRight " data-wow-duration=" 2s ">I.E.D. Liceo Santander </h1>
+                        <p></p>
+                        <p class=" wow slideInRight " data-wow-duration=" 1s " data-wow-offset=" 10 " data- wow-iteration=" 10 " data-wow-delay=" 2s ">Comprometido con la Educación de Chibolo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+          <header class="cabecera">
+                                  <!--EMPIEZA MENU HORIZONTAL-->
+        <div class="container">
+           <nav class="navegacion">
+                <ul class="menu">
+                    <li><a href="index.html" class="">Inicio</a></li>
+                    <li><a href="mision.html" class="">Nosotros</a></li>
+                    <!-- <li><a href="profesores.html" class="">Docentes</a></li> -->
+                    <li><a href="niveleseducativos.html" class="">Niveles Educativos</a></li>
+                    <li><a href="documentos.html" target="">Liceo en casa</a></li>
+                    <li><a href="login.html" target="">Login</a></li>
+                   <li><a href="contacto.html">Contactenos</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="hamb"><i class="fas fa-bars"></i></a>
+        </div>
+    </header>
+                                  <!--TERMINA MENU HORIZONTAL-->
+    <main>
+        <section id="usuario-contraseña">
+            <div class="container">
+                <div class="cuadro-login">
+                    <div class="contenedor-login">
+                         <div class="datos-login">  
+                            <h2>Iniciar sesión</h2>
+                         </div>
+                         <div class="contenedor-form">
+                            <form name="form" method="post" action="http://localhost/Instliceosantander/login1.html">
+                                <INPUT type="text" name="login" placeholder="usuario" id="user"><br> 
+                                <INPUT type="password" name="password" placeholder="contraseña" id="pass"><br> 
+                                <INPUT onclick="ingresar()" type="button" value="ENTRAR" class="aceptar">
+                            </form>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>    
+         <section id="contacto">
+            <footer class="seccion">
+                <div class="container2">
+                    <div class="fila fila-centrada">
+                    </div>
+                    <div class="fila">
+                        <div class="columna columna-33 columna-mb-100">
+                            <div class="contenedor-serv">
+                                <img src="img/imagenes/logo.png" class="logo-footer">
+                            </div>
+                        </div>
+                        <div class="columna columna-33 columna-mb-100">
+                            <div class="contenedor-serv">
+                                <h3>Chibolo, Magdalena, Colombia</h3>
+                                <ul>
+                                    <li>Cra 14 # 16-68 - Barrio 23 de Abril</li>
+                                    <li>liceosantander@yahoo.es</li>
+                                    <li>(57) 3025554444</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="columna columna-33 columna-mb-100">
+                            <div class="contenedor-serv">
+                                <h3>Redes Sociales</h3>
+                                <ul class="redes">
+                                    <!-- <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                                    <li><a href="https://" target="_blank"><i class="fab fa-instagram"></i></a></li> -->
+                                    <li><a href="https://www.facebook.com/profile.php?id=100058101155495" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="barra-footer">
+                    &reg; Derechos Reservados - 2021
+                </div>
+            </footer>
+        </section>    
+    </main>
+</body>
+</html>

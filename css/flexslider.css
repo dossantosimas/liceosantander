@@ -1,0 +1,247 @@
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url("../webfonts/fa-regular-400.eot");
+    src: url("../webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.woff") format("woff"), url("../webfonts/fa-regular-400.ttf") format("truetype"), url("../webfonts/fa-regular-400.svg#fontawesome") format("svg");
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    /*background-color: #6339ed;*/
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 50px;
+    color: #0aad17;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+}
+
+ul {
+    list-style: none;
+    /*se quita los estilos a todos los ul */
+}
+
+
+/*======EMPIEZA EL CARRUSEL====*/
+
+.flexslider {
+    width: 95%;
+    height: 510px;
+    max-width: 1000px;
+    margin: 60px auto;
+    border: 5px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 30px 0px black;       
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: stretch;
+
+}
+
+.flexslider.titulo-inicio                /*cambio del alto en mobil acostado*/
+{
+    height: 328px;
+}
+
+.slides {
+    overflow: hidden;
+
+}
+
+.slides,
+.slides li,
+.slides li img {
+    width: 100%;
+}
+
+.slides li img {
+    display: block;
+    /*margin-bottom: -114px;*/
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.slides li img.titulo-inicio  /*cambio del alto en mobil acostado*/
+
+
+{
+    height: auto;
+}
+
+
+/*============ PAGINACION - puntos de abajo para cambio img====*/
+
+.flex-control-nav.flex-control-paging             /*rect de cambio de img*/
+{
+    width: 120px;
+    padding: 20px 0;
+    background-color: #1a89df;
+    /*border: 2px solid rgba(255,255,255,.3);
+	border-radius: 10px;
+	box-shadow: 0px 0px 3px 0px rbga(0,0,0,.8);*/   /* para q no se vea los puntos de abajo al hacer los cambios */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    list-style: none;
+    position: absolute;
+    bottom: -0px;                 /* para q no se vea los puntos de abajo al hacer los cambios */
+    /*z-index: 0;*/
+    display: none;
+}
+
+.flex-control-nav li                  /*el rectangulo azul*/
+{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.flex-control-nav li a              /*los a (puntitos) dentro del rectangulo*/
+{
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    text-indent: -9999px;                           /*para eliminar los numeritos */
+}
+
+.flex-control-nav li a.flex-active                 /* para q al pasar la imagen el redondido quede de otro color*/
+
+{
+    background-color: #000;
+}
+
+
+/*=============== NAVEGACION   NEXT Y PREVIU=========*/
+
+.flex-direction-nav                /*contenedor de next y prev*/
+{
+    z-index: 3;
+    list-style: none;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.flex-direction-nav a 
+{
+    width: 25px;
+    height: 25px;
+    margin-bottom: 5px;
+    background: #fff;
+    text-decoration: none;
+    border: 2px solid rgba(255, 255, 255, .3);
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 0px rbga(0, 0, 0, .8);
+    display: flex;                                  /* para poder mover de lugar las flechas */
+   justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.flex-direction-nav .flex-prev {
+    right: 0;
+    color: grey;
+}
+
+.flex-direction-nav .flex-next {
+    left: 0;
+    color: grey;
+}
+
+
+/*================CAPTION=========*/
+
+.caption               /*p texto de cada foto*/
+{
+    position: absolute;
+    top: 90%;
+    z-index: 2;
+    padding-left: 5%;
+    color: #f75707;
+    font-size: 40px;
+    color: orange;
+}
+
+.color
+ {
+    color: red;
+}
+
+@media (max-width: 1199px) {
+
+    .container 
+    {
+        /*width: 960px;*/
+    }
+}
+
+@media (max-width: 991px) {
+
+    .container 
+    {
+        /*width: 768px;*/
+    }
+
+      .flexslider {
+        width: 95%;
+        height: 395px;
+    }
+
+
+    .slides li img {
+        display: block;
+        margin-bottom: 0px;
+        justify-content: space-around;
+        align-items: center;
+       
+    }
+}
+
+@media(max-width: 767px) {
+
+    .flexslider {
+        width: 95%;
+        height: 180px;
+    }
+
+    .slides 
+    {
+        overflow: hidden;
+    }
+
+    .slides,
+    .slides li,
+    .slides li img {
+        width: 100%;
+    }
+
+    .slides li img
+     {
+        display: block;
+        margin-bottom: -0px;
+        justify-content: space-around;
+        align-items: center;
+        /*height: 30vh;*/
+    }
+}

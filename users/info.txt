@@ -1,0 +1,5 @@
+{pablo,pablo123,Pablo Dos Santos}
+{marcelo,12345,Marcelo Dos Santos}
+{luis,123456,Luis Dos Santos}
+{hugo,123456,Hugo Fonseca}
+{juana,1234,Juanita la Chismosa}
